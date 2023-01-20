@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: white;
+    font-family: open-sans;
+    overflow-x: hidden;
+}
+
+#welcome{
+    background-image: url(/war-images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 70px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    gap: 45px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: black;
+    text-shadow: 2px 2px 20px white;
+    transition: all 0.5s;
+}
+
+header img {
+    width: 150px;
+}
+
+section {
+    height: 100vh;
+}
+
+.welcome-text {
+width: 90vw;
+margin: 300px auto;
+}
+
+.welcome-text h1 {
+font-size: 80px;
+text-align: center;
+}
+
+/* hakkında kısmı */
+
+#about {
+    background-color: black;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.about-text{
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 600px;
+}
+
+.about-text p {
+    margin-top: 50px;
+    font-family: poppins;
+}
+
+
+#about img{
+    
+    max-width: 400px;
+    max-height: 400px;
+}
+
+@media (max-width:1100px) {
+    #about {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .about-text h1 {
+        font-size: 40px;
+    }
+    .about-text p {
+        margin-top: 20px;
+    }
+    #about img {
+        width: 350px;
+    }
+}
+
+/* Battle alanı*/
+
+#battle {
+
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 0%,black 50%),url(/war-images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.heading {
+  padding-top: 50px;
+}
+.heading h4 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading h1 {
+    font-weight: 300px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.boxes {
+    width: 500px;
+    height: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 250px;
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'open-sans';
+}
+
+.box h1{
+    font-size: 15px;
+    color: rgb(128, 23, 23);
+}
+ 
+.box p {
+    font-size: 20px;
+}
+.box:last-child {
+    width: 600px;
+}
+
+/*fikirler alanı*/
+
+#opinions {
+background-image: url(/war-images/sec-3.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 120vw;
+display: flex;
+justify-content: space-between;
+padding: 100px;
+}
+.opinions-text {
+    max-width: 470px;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  
+}
+
+.opinions-text h5{
+    font-size:20px ;
+}
+
+.opinions-text h1{
+    font-size: 50px;
+}
+
+.opinions-text p{
+    font-size: 15px;
+}
+
+.opinions-text button {
+    padding: 5px;
+    background-color: red;
+    font-weight: 100;
+    border-radius: 10px;
+    transition: color 0.3s;
+    margin-top: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.opinions-text button:hover {
+    background-color: black;
+    color: red;
+    transition: all 0.5s;
+}
+
+.cards {
+width: 500px;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+gap: 50px;
+justify-content: center;
+margin-right: 50px;
+}
+
+.card {
+    font-size: 10px;
+    background-color: rgb(36, 35, 35);
+    width: 350px;
+    border-radius: 10px;
+    font-family: 'poppins';
+    padding: 10px;
+}
+
+.card:nth-child(2) {
+align-self: flex-start;
+}
+
+.user {
+display: flex;
+gap: 30px;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.user-info h1{
+    color: crimson;
+    font-size: 15px;
+
+}
+.gray{
+    color: gray;
+}
+
+@media (max-width: 1100px) {
+    #about {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .about-text h1 {
+        font-size: 40px;
+    }
+    .about-text p {
+        margin-top: 20px;    }
+    #about img {
+        width: 350px;
+    }
+ #opinions {
+    flex-direction: column;
+ }
+ .opinions-text {
+    margin: 0 auto;
+ }
+ .cards{
+    gap: 10px;
+    margin: 0 auto;
+ }
+}
